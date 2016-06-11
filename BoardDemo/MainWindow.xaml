@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BoardDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="270" Width="350">
+    <Grid x:Name="LayoutRoot" Background="White" Margin="0,0,0,0">
+        <Canvas Height="159" HorizontalAlignment="Left" Margin="25,25,0,0" Name="canvas1" VerticalAlignment="Top" Width="171" Loaded="canvas1_Loaded" MouseLeftButtonDown="canvas1_MouseLeftButtonDown" Background="White" />
+        <Button Content="すべてをクリア" Height="23" HorizontalAlignment="Left" Margin="218,25,0,0" Name="button1" VerticalAlignment="Top" Width="94" Click="button1_Click" />
+        <Button Content="空きを白で埋める" Height="23" HorizontalAlignment="Left" Margin="218,62,0,0" Name="button2" VerticalAlignment="Top" Width="94" Click="button2_Click" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="218,138,0,0" Name="textBlock1" Text="TextBlock" VerticalAlignment="Top" Width="120" />
+        <Button Content="白をカウント" Height="23" HorizontalAlignment="Left" Margin="218,101,0,0" Name="button3" VerticalAlignment="Top" Width="94" Click="button3_Click" />
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,202,0,0" TextWrapping="Wrap" Text="クリックすると黒、白、空きとセルの状態が変わります" VerticalAlignment="Top"/>
     </Grid>
 </Window>
